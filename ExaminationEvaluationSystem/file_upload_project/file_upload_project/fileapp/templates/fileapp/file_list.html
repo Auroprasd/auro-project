@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><h2>Uploaded Files</h2></title>
+</head>
+<body>
+
+<ul>
+    {% for file in files %}<li>
+  <p>Title: {{ file.title }}</p>
+  <p>Uploaded By: {{ file.uploaded_by }}</p>
+  <p>Uploaded At: {{ file.uploaded_at }}</p>
+  <p>Last Modified By: {{ file.updated_by }}</p>
+    <p>Last Modified At: {{ file.last_modified }}</p></li>
+{% endfor %}
+
+</ul>
+
+
+</body>
+</html>
